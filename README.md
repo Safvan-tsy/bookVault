@@ -17,7 +17,7 @@
 
 ### Setup Instructions
 
-1. **Clone the repository**
+1. **Clone repository**
    ```bash
    git clone https://github.com/Safvan-tsy/bookVault.git
    cd book-vault
@@ -33,13 +33,13 @@
    npm install
    ```
 
-4. **Environment Configuration**
+4. **Environment configuration**
    ```bash
    cp .env.example .env
    php artisan key:generate
    ```
 
-5. **Database Setup**
+5. **Database setup**
    
    - Create a MySQL database `book_vault`
    - Update `.env` with your MySQL credentials:
@@ -52,18 +52,37 @@
    DB_PASSWORD=your_password
    ```
 
-6. **Run Migrations and Seeders**
+6. **Gmail SMTP setup for email service**
+     
+     Gmail SMTP Configuration:
+     
+     Setup Requirements:
+     1. Enable 2-Factor Authentication on Gmail account
+     2. Generate App Password: Google Account > Security > App passwords
+     
+     Env Variables:
+      MAIL_MAILER=smtp
+      MAIL_HOST=smtp.gmail.com
+      MAIL_PORT=587
+      MAIL_USERNAME= // your_email>
+      MAIL_PASSWORD= // app password
+      MAIL_ENCRYPTION=tls
+      MAIL_FROM_ADDRESS= // your_email>
+      MAIL_FROM_NAME="${APP_NAME}"
+ 
+
+7. **Run Migrations and Seeders**
    ```bash
    php artisan migrate
    php artisan db:seed
    ```
 
-7. **Build Assets**
+8. **Build Assets**
    ```bash
    npm run build
    ```
 
-8. **Start the Application**
+9. **Start the Application**
    ```bash
    php artisan serve
    ```
