@@ -19,7 +19,7 @@
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/Safvan-tsy/book-vault.git
+   git clone https://github.com/Safvan-tsy/bookVault.git
    cd book-vault
    ```
 
@@ -41,12 +41,6 @@
 
 5. **Database Setup**
    
-   **For Development (SQLite):**
-   ```bash
-   touch database/database.sqlite
-   ```
-   
-   **For Production (MySQL):**
    - Create a MySQL database `book_vault`
    - Update `.env` with your MySQL credentials:
    ```env
