@@ -20,7 +20,7 @@
 1. **Clone repository**
    ```bash
    git clone https://github.com/Safvan-tsy/bookVault.git
-   cd book-vault
+   cd bookVault
    ```
 
 2. **Install PHP dependencies**
@@ -60,16 +60,16 @@
      1. Enable 2-Factor Authentication on Gmail account
      2. Generate App Password: Google Account > Security > App passwords
      
-     Env Variables:
+     ```env
       MAIL_MAILER=smtp
       MAIL_HOST=smtp.gmail.com
       MAIL_PORT=587
-      MAIL_USERNAME= // your_email>
+      MAIL_USERNAME= // your_email
       MAIL_PASSWORD= // app password
       MAIL_ENCRYPTION=tls
       MAIL_FROM_ADDRESS= // your_email>
       MAIL_FROM_NAME="${APP_NAME}"
- 
+      ```
 
 7. **Run Migrations and Seeders**
    ```bash
